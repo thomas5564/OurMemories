@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "learn-c3f66"
+  },
+  "targets": {
+    "learn-c3f66": {
+      "hosting": {}
+    }
+  },
+  "etags": {}
+}

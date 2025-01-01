@@ -1,0 +1,208 @@
+/* Anniversary Dashboard.css */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #4e3c3e;
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e1bee7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #880e4f;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #f06292, #ec407a);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.add-feature-container {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid #e1bee7;
+}
+
+.add-feature-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  color: #880e4f;
+}
+
+.add-feature-container textarea {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  border-radius: 15px; /* Rounder corners */
+  padding: 10px; /* Add some padding for a better look */
+  border: 1px solid #ccc; /* Add a light border */
+  outline: none; /* Remove default outline on focus */
+  font-family: 'Georgia', serif; /* Set font for text */
+  resize: vertical; /* Allow resizing only vertically */
+}
+
+.add-feature-container textarea::placeholder {
+  font-family: 'Georgia', serif; /* Font for placeholder */
+  font-style: italic; /* Optional: Make placeholder italic */
+}
+
+.form-group .form-input {
+  font-style: italic;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+  width: 1120px;
+}
+
+.form-input:focus {
+  border-color: #ec407a;
+  outline: none;
+  box-shadow: 0 0 6px rgba(236, 64, 122, 0.5);
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #f48fb1, #f06292);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.features-container {
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 2px solid #f8bbd0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image {
+  display: block;
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 400px;
+}
+
+.feature-content {
+  display: flex; /* Enables Flexbox */
+  align-items: flex-start; /* Align content at the top */
+  gap: 20px; /* Add spacing between image and description */
+}
+.topn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image:hover {
+  transform: scale(1.05);
+  border: 2px solid #f06292;
+}
+
+.desc {
+  width: 30%; /* Or set a specific width like 300px */
+  transform: translateY(20px); /* Moves it 20px down */
+  height: 370px; /* Matches the height of the image */
+  border: 2px solid #f06292;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc p {
+  margin: 0; /* Removes default paragraph margins */
+  white-space: normal; /* Allows text to wrap naturally (if needed) */
+}
+
+.add-feature-container .form-group input,
+.add-feature-container .form-group textarea,
+.add-feature-container .form-group input[type="file"] {
+  margin-bottom: 15px; /* Adjust spacing between fields */
+}
+
+.add-feature-container .form-group {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 0px; /* Uniform gap between fields */
+}
+.delete-btn{
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vovo{
+  display: flex;
+  flex-direction: row; 
+}
